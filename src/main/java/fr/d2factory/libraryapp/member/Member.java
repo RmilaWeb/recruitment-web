@@ -12,6 +12,9 @@ public abstract class Member {
      */
     private float wallet;
 
+    // identity
+    protected long id;
+
     /**
      * The member should pay their books when they are returned to the library
      *
@@ -25,5 +28,13 @@ public abstract class Member {
 
     public void setWallet(float wallet) {
         this.wallet = wallet;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }
